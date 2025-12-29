@@ -51,8 +51,8 @@
 **Location:** Azure Portal > Virtual Machines > Create
 
 ### **Basics Tab:**
-- Resource group: Same `group[X]-rg`  # previously had 'group[X]-rg-[YOUR INITIAL]'
-- VM name: `student-vm-[YOUR INITIALS]`  # Example: student-vm-JFT  # previously student[name]-vm-[YOUR INITIAL]
+- Resource group: Same `group[X]-rg`  
+- VM name: `student-vm-[YOUR INITIALS]`  
 - Region: East US
 - Availability Options: No infrastructure redundancy required
 - Security Type: Standard
