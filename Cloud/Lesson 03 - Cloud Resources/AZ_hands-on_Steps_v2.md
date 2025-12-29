@@ -1,18 +1,18 @@
 # Azure Hands-On Demo: Personal Website Deployment
 
 ## **STEP 0: Create Azure Account
-- If you have not already done so, visit the following link to create an Azure account: https://azure.microsoft.com/en-au/pricing/purchase-options/azure-account/search ef_id=_k_a753b5c9c0fd189e0456dc9b4f322278_k_&OCID=AIDcmms2uus4dd_SEM__k_a753b5c9c0fd189e0456dc9b4f322278_k_&msclkid=a753b5c9c0fd189e0456dc9b4f322278.
-- If the above link does not work, simply type "create azure account" into a search engine of your choice and click on the appropiate link. 
-- You can choose to accept the $200 credit for 30 days or pay as you go for the duration of the prerequisite course.  During the AI Technician Course, you will receive instructions from the CMU faculty on how to receive sufficient student credits for course completion. 
+1. If you have not already done so, visit the following link to create an Azure account: https://azure.microsoft.com/en-au/pricing/purchase-options/azure-account/search ef_id=_k_a753b5c9c0fd189e0456dc9b4f322278_k_&OCID=AIDcmms2uus4dd_SEM__k_a753b5c9c0fd189e0456dc9b4f322278_k_&msclkid=a753b5c9c0fd189e0456dc9b4f322278.
+2. If the above link does not work, simply type "create azure account" into a search engine of your choice and click on the appropiate link.
+3. You can choose to accept the $200 credit for 30 days or pay as you go for the duration of the prerequisite course.  During the AI Technician Course, you will receive instructions from the CMU faculty on how to receive sufficient student credits for course completion. 
 
 ## **STEP 1: Create Resource Group**
 **Location:** Azure Portal > Resource Groups > Create
-- Resource Groups can be found by simply typing "Resource Groups" in the Azure Portal Search Bar at the top of the home screen (https://portal.azure.com/).
-- The Create buttom can be found in the top left side of the Resource Groups screen next to a + sign.  
+1. Resource Groups can be found by simply typing "Resource Groups" in the Azure Portal Search Bar at the top of the home screen (https://portal.azure.com/).
+2. The Create buttom can be found in the top left side of the Resource Groups screen next to a + sign.  
 
 ### **Basic Settings:**
-- Name: `group[X]-rg` (e.g., `group1-rg`)
-- Location: East US
+1. Name: `group[X]-rg` (e.g., `group1-rg`)
+2. Location: East US
 
 **Click the "Review + Create" button at the bottom of the page.**
 
