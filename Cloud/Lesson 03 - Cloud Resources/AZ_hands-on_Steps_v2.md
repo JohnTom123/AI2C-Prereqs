@@ -97,13 +97,14 @@ ssh azureuser@[YOUR-VM-PUBLIC-IP]
 ```
 
 3. **You're now inside your VM!** The prompt will change to: `azureuser@student[name]-vm:~$`
+4. Optional: You can clear away previous commands and move your prompt to the top of the cloud shell by typing the 'clear' command. 
 
 ---
 
 ## **STEP 5: Install Software and Deploy Website**
-**Location:** Inside your VM via SSH
+**Location:** Inside your VM via SSH using the cloud shell.
 
-### **Update system and install nginx using the following commands.**
+### **Update system and install nginx using the following commands.  You can issue the following commands individually or copy/paste them all at once.  The latter method does sometimes complicate troubleshooting and might cause other issues in future labs.**
 ```bash
 sudo apt update
 sudo apt upgrade -y
