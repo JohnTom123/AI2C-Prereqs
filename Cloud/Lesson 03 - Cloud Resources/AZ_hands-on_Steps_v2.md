@@ -137,7 +137,7 @@ sudo rm /var/www/html/index.nginx-debian.html
     - This is the general structure of the scp command you need to execute:
         scp [insert the cloud shell path to the starterpack.html file] [your_username@you_vm_ip_address:/path/to/your/VM/working/directory/]
     - Example: scp /home/john/starterpack.html azureuser@20.169.243.207:/home/azureuser
-6. SSH again into your VM.  Confirm the starterpack.html file's presense using the 'ls' command. 
+6. SSH again into your VM.  Confirm the starterpack.html file's presense in your VM's working directory using the 'ls' command. 
 
 ### **Deploy your starter website:**
 ```bash
