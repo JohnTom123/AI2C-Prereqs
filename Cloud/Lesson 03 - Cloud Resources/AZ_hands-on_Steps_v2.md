@@ -106,7 +106,7 @@ ssh azureuser@[YOUR-VM-PUBLIC-IP]
 ## **STEP 5: Install Software and Deploy Website**
 **Location:** Inside your VM via SSH using the cloud shell.
 
-### **Update system and install nginx using the following commands.  
+### Update system and install nginx using the following commands.  
 - You can issue the following commands individually or copy/paste them all at once.
 - The latter method does sometimes complicate troubleshooting and might cause other issues in future labs.**
 ```bash
