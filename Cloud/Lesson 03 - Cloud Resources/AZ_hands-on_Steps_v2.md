@@ -41,32 +41,34 @@
   - Name: `first-subnet`
   - Address range: Same as VNet address space above `10.1.X.0/28`
   - Leave the remaining settings (i.e., Security, Service Endpoints, etc.) as default.
-  - Click the "Add" button at the bottom. 
+  - Click the "Add" button at the bottom.
 
-### **Click the "Review + Create" button at the bottom of the page.**
+### **Click the "Review + Create" button at the bottom of the page.  Once you receive the "Validation Passed" green bar, click the "Create" button at the bottom of the page.**
 
 ---
 
 ## **STEP 3: Create Virtual Machine**
-**Location:** Azure Portal > Virtual machines > Create
+**Location:** Azure Portal > Virtual Machines > Create
 
 ### **Basics Tab:**
-- Resource group: Same `group[X]-rg-[YOUR INITIAL]`
-- VM name: `student[name]-vm-[YOUR INITIAL]`
+- Resource group: Same `group[X]-rg`  # previously had 'group[X]-rg-[YOUR INITIAL]'
+- VM name: `student-vm-[YOUR INITIALS]`  # Example: student-vm-JFT  # previously student[name]-vm-[YOUR INITIAL]
 - Region: East US
-- Availability Option: No infrastructure redundancy required
+- Availability Options: No infrastructure redundancy required
 - Security Type: Standard
 - Image: Ubuntu Server 22.04 LTS x64 Gen2
 - Size: B1s (1 vcpu, 1 GB RAM)
 - **Authentication type:** Password
 - **Username:** `azureuser`
 - **Password:** Create a strong password (write it down!)
+- Note: You may receive recommendations for specific configurations (i.e., different region, availability zone, etc.) that help the VM deploy.  Not following these recommendations usually results in VM deployment failure.  You can typically follow the recommendations without serious issues.  That said, you will need to assess whether a specific recommendation interferes or breaks other parts of a specific exercise.  
 
 ### **Networking Tab:**
-- Virtual network: Select your `group[X]-network`
+- Virtual network: Select your `group[X]-network`.  If you cannot see this virtual network, then a recommendation might have placed you in a different region.  If so, then revert back to the original region or consult with your group members about changing the virtual network region. 
 - Subnet: `web-subnet`
 - Public IP: Create new
 - **Select inbound ports:** SSH (22), HTTP (80), and HTTPS (443)
+- Leave the remaining settings as their default.
 
 ### **Create VM**
 
