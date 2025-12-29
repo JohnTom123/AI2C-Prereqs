@@ -89,18 +89,19 @@
 # SSH into your VM (replace with your actual Public IP)
 ssh azureuser@[YOUR-VM-PUBLIC-IP]
 
+# You might be asked "Are you sure you want to continue connecting (yes/no/[fingerprint])?"  Type yes.
+
 # When prompted, enter the password you created during VM setup
 # Note: You won't see characters as you type the password (this is normal)
+
 ```
-
 3. **You're now inside your VM!** The prompt will change to: `azureuser@student[name]-vm:~$`
-
 ---
 
 ## **STEP 5: Install Software and Deploy Website**
 **Location:** Inside your VM via SSH
 
-### **Update system and install nginx:**
+### **Update system and install nginx using the following commands.**
 ```bash
 sudo apt update
 sudo apt upgrade -y
