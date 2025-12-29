@@ -70,7 +70,7 @@
 - **Select inbound ports:** SSH (22), HTTP (80), and HTTPS (443)
 - Leave the remaining settings as their default.
 
-### **Create VM**
+### **Create VM (Click on the "Review + Create" button and then (when the validation passes) the "Create" button)**
 
 ---
 
