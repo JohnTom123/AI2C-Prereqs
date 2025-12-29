@@ -204,10 +204,10 @@ exit
 ## **What You Learned So Far:**
 
 ### **Key Concepts:**
-**Compute:** VMs run nginx web server with direct file deployment. 
-**Networking:** VNets provide private network isolation between groups.   
-**Linux Skills:** File editing, permissions, and system administration. 
-**Network Understanding:** Private vs Public IP addressing. 
+- **Compute:** VMs run nginx web server with direct file deployment. 
+- **Networking:** VNets provide private network isolation between groups.   
+- **Linux Skills:** File editing, permissions, and system administration. 
+- **Network Understanding:** Private vs Public IP addressing. 
 
 ### **Key Demonstrations Completed:**
 - **Direct VM Development:** Copying and editing files on cloud servers. 
