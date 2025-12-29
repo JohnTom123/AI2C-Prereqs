@@ -1,18 +1,18 @@
 # Azure Hands-On Demo: Personal Website Deployment
 
 ## **STEP 0: Create Azure Account
-1. If you have not already done so, visit the following link to create an Azure account: https://azure.microsoft.com/en-au/pricing/purchase-options/azure-account/search ef_id=_k_a753b5c9c0fd189e0456dc9b4f322278_k_&OCID=AIDcmms2uus4dd_SEM__k_a753b5c9c0fd189e0456dc9b4f322278_k_&msclkid=a753b5c9c0fd189e0456dc9b4f322278
-2. If the above link does not work, simply type "create azure account" into a search engine of your choice and click on the appropiate link.
-3. You can choose to accept the $200 credit for 30 days or pay as you go for the duration of the prerequisite course.  During the AI Technician Course, you will receive instructions from the CMU faculty on how to receive sufficient student credits for course completion. 
+- If you have not already done so, visit the following link to create an Azure account: https://azure.microsoft.com/en-au/pricing/purchase-options/azure-account/search ef_id=_k_a753b5c9c0fd189e0456dc9b4f322278_k_&OCID=AIDcmms2uus4dd_SEM__k_a753b5c9c0fd189e0456dc9b4f322278_k_&msclkid=a753b5c9c0fd189e0456dc9b4f322278
+- If the above link does not work, simply type "create azure account" into a search engine of your choice and click on the appropiate link.
+- You can choose to accept the $200 credit for 30 days or pay as you go for the duration of the prerequisite course.  During the AI Technician Course, you will receive instructions from the CMU faculty on how to receive sufficient student credits for course completion. 
 
 ## **STEP 1: Create Resource Group**
 **Location:** Azure Portal > Resource Groups > Create
-1. Resource Groups can be found by simply typing "Resource Groups" in the Azure Portal Search Bar at the top of the home screen (https://portal.azure.com/).
-2. The Create buttom can be found in the top left side of the Resource Groups screen next to a + sign.  
+- Resource Groups can be found by simply typing "Resource Groups" in the Azure Portal Search Bar at the top of the home screen (https://portal.azure.com/).
+- The Create buttom can be found in the top left side of the Resource Groups screen next to a + sign.  
 
 ### **Basic Settings:**
-1. Name: `group[X]-rg` (e.g., `group1-rg`)
-2. Location: East US
+- Name: `group[X]-rg` (e.g., `group1-rg`)
+- Location: East US
 
 **Click the "Review + Create" button at the bottom of the page.**
 
@@ -23,9 +23,9 @@
 **Location:** Azure Portal > Virtual Networks > Create
 
 ### **Basic Settings:**
-1. Select: Resource Group from Step 1
-2. Name: `group[X]-network` (e.g., `group1-network`)
-3. Region: East US
+- Select: Resource Group from Step 1
+- Name: `group[X]-network` (e.g., `group1-network`)
+- Region: East US
 
 ### **IP Addresses Tab (Top of the page under "Create Virtual Network"):**
 1. In the center of the tab, replace the default 10.0.0.0/16 address space with your designated group's address space below.
@@ -51,17 +51,17 @@
 **Location:** Azure Portal > Virtual Machines > Create
 
 ### **Basics Tab:**
-1. Resource group: Same `group[X]-rg`  # previously had 'group[X]-rg-[YOUR INITIAL]'
-2. VM name: `student-vm-[YOUR INITIALS]`  # Example: student-vm-JFT  # previously student[name]-vm-[YOUR INITIAL]
-3. Region: East US
-4. Availability Options: No infrastructure redundancy required
-5. Security Type: Standard
-6. Image: Ubuntu Server 22.04 LTS x64 Gen2
-7. Size: B1s (1 vcpu, 1 GB RAM)
-8. **Authentication type:** Password
-9. **Username:** `azureuser`
-10. **Password:** Create a strong password (write it down!)
-11. Note: You may receive recommendations for specific configurations (i.e., different region, availability zone, etc.) that help the VM deploy.  Not following these recommendations usually results in VM deployment failure.  You can typically follow the recommendations without serious issues.  That said, you will need to assess whether a specific recommendation interferes or breaks other parts of a specific exercise.  
+- Resource group: Same `group[X]-rg`  # previously had 'group[X]-rg-[YOUR INITIAL]'
+- VM name: `student-vm-[YOUR INITIALS]`  # Example: student-vm-JFT  # previously student[name]-vm-[YOUR INITIAL]
+- Region: East US
+- Availability Options: No infrastructure redundancy required
+- Security Type: Standard
+- Image: Ubuntu Server 22.04 LTS x64 Gen2
+- Size: B1s (1 vcpu, 1 GB RAM)
+- **Authentication type:** Password
+- **Username:** `azureuser`
+- **Password:** Create a strong password (write it down!)
+- Note: You may receive recommendations for specific configurations (i.e., different region, availability zone, etc.) that help the VM deploy.  Not following these recommendations usually results in VM deployment failure.  You can typically follow the recommendations without serious issues.  That said, you will need to assess whether a specific recommendation interferes or breaks other parts of a specific exercise.  
 
 ### **Networking Tab:**
 - Virtual network: Select your `group[X]-network`.  If you cannot see this virtual network, then a recommendation might have placed you in a different region.  If so, then revert back to the original region or consult with your group members about changing the virtual network region. 
@@ -148,7 +148,7 @@ sudo chmod 644 /var/www/html/index.html
 ### **Test your website locally:**
 ```bash
 curl http://localhost & curl http://publicip
-# Should show your starterpack.html content.
+# Should show your starterpack.html content.  You may receive a 'Could not resolve host: publicip' statement at the bottom of your curl.  That is expected. 
 ```
 
 ---
@@ -166,10 +166,10 @@ ip addr show
 
 ### **Test group connectivity:**
 ```bash
-# Test connectivity within your group (replace with classmate's IP)
+# Test connectivity within your group (replace with classmate's IP).  A successful ping should return something like "64 bytes from 10.1.1.4: icmp_seq=7 ttl=64 time=0.047 ms".
 ping -c 3 10.1.16.5
 
-# Try to ping another group (should FAIL - demonstrates isolation)
+# Try to ping another group.  This should FAIL as you have not defined a route to that other group.  This is a demonstation of network isolation. 
 ping -c 3 10.1.32.4
 ```
 
@@ -195,14 +195,14 @@ exit
 
 ---
 
-## **Learned So Far:**
+## **What You Learned So Far:**
 
-**Compute:** VM runs nginx web server with direct file deployment  
-**Networking:** VNet provides private network isolation between groups  
-**Linux Skills:** File editing, permissions, and system administration  
-**Network Understanding:** Private vs Public IP addressing
+**Compute:** VMs run nginx web server with direct file deployment. 
+**Networking:** VNets provide private network isolation between groups.   
+**Linux Skills:** File editing, permissions, and system administration. 
+**Network Understanding:** Private vs Public IP addressing. 
 
 ### **Key Demonstrations Completed:**
-- **Direct VM Development:** Copying and editing files on cloud servers
-- **Network Isolation:** /28 subnets provide group separation
-- **Private IP Communication:** Can ping within group, not across groups
+- **Direct VM Development:** Copying and editing files on cloud servers. 
+- **Network Isolation:** /28 subnets provide group separation. 
+- **Private IP Communication:** Can ping within group, not across groups. 
