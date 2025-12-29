@@ -5,6 +5,8 @@
 - If the above link does not work, simply type "create azure account" into a search engine of your choice and click on the appropiate link.
 - You can choose to accept the $200 credit for 30 days or pay as you go for the duration of the prerequisite course.  During the AI Technician Course, you will receive instructions from the CMU faculty on how to receive sufficient student credits for course completion. 
 
+---
+
 ## **STEP 1: Create Resource Group**
 **Location:** Azure Portal > Resource Groups > Create
 - Resource Groups can be found by simply typing "Resource Groups" in the Azure Portal Search Bar at the top of the home screen (https://portal.azure.com/).
